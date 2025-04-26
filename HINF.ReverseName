@@ -1,0 +1,8 @@
+def ReverseName(name):
+    comma_index=name.index(',')
+    first_name = name[:comma_index]
+    last_name = name[comma_index + 2:]
+    result = f"{last_name}, {first_name}"
+    return result
+name = "Victor, Agunbiade"
+print(ReverseName(name))
